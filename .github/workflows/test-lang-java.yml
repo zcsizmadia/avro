@@ -71,6 +71,7 @@ jobs:
           brew install --cask temurin11
           brew install --cask temurin17
           brew install --cask temurin21
+          java --version
 
       - name: 'Setup Maven 3.9.6'
         uses: stCarolas/setup-maven@07fbbe97d97ef44336b7382563d66743297e442f # v4.5
