@@ -45,8 +45,7 @@ jobs:
       - if: matrix.os == 'macos-14'
         name: 'Setup JDK 8'
         run: |
-          brew install --cask temurin8
-          brew tap homebrew/cask-versions
+          brew install openjdk@8
 
       - name: 'Checkout sourcecode'
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -64,7 +63,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: |
-            8
             11
             17
             21
