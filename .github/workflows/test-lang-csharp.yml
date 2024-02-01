@@ -50,7 +50,7 @@ jobs:
 
       - name: Add libzstd
         shell: bash
-        run: sudo brew install libzstd-dev
+        run: brew install libzstd-dev
         if: matrix.os == 'macos-14'
 
       - name: Install .NET SDKs
